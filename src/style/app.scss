@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: hsl(216, 12%, 8%);
+  min-height: 100dvh;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}

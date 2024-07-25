@@ -1,0 +1,91 @@
+article {
+  background: hsl(213, 19%, 18%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 400px;
+
+  img {
+    background: rgb(149, 158, 172, 0.25);
+    padding: 0.5rem;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    &.submit {
+      display: block;
+      margin: 1rem auto;
+      height: 150px;
+      background: none;
+      border-radius: 0;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    margin-block: 1rem;
+    &.submit {
+      text-align: center;
+    }
+  }
+
+  p {
+    color: hsl(217, 12%, 63%);
+    text-wrap: balance;
+    &.submit {
+      text-align: center;
+    }
+
+    &.orange {
+      text-align: center;
+      background: rgb(251, 116, 19, 0.25);
+      color: hsl(25, 97%, 53%);
+      padding: 0.5rem 1rem;
+      width: fit-content;
+      display: block;
+      margin: 0 auto;
+      border-radius: 25px;
+    }
+  }
+
+  div {
+    margin-block: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 0.5rem;
+    justify-content: space-between;
+    button {
+      background: rgb(149, 158, 172, 0.25);
+      color: rgb(128, 128, 128);
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      transition: all 0.5s;
+
+      &:hover {
+        background: rgb(251, 116, 19);
+      }
+
+      &.active {
+        background: #fff;
+      }
+    }
+  }
+
+  button:not(div > button) {
+    background: hsl(25, 97%, 53%);
+    width: 100%;
+    height: 50px;
+    padding-block: 0.5rem;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
